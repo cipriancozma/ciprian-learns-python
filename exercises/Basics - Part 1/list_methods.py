@@ -12,7 +12,7 @@ print(new_list)
 basket.insert(5, 200)
 print(basket)
 
-basket.extend([120, 140])
+basket.extend([400, 120, 90])
 print(basket)
 
 # removing
@@ -22,6 +22,35 @@ print(basket)
 basket.remove(1)
 print(basket)
 
-basket.clear()
+#basket.clear()
+#print(basket)
+
+# index
+print(basket.index(2))
+print(4 in basket)
+
+# count
+print(basket.count(2))
+
+# sort
+# basket.sort()
+new_basket = sorted(basket)
+print(new_basket)
+
+basket.reverse()
 print(basket)
 
+numbers_list = list(range(1, 100))
+print(numbers_list)
+
+# join
+sentence = ' '
+new_sentence = sentence.join(["Hi", "my name is"])
+print(new_sentence)
+
+# list unpacking
+a, b, c, *all = [1, 2, 3, 4, 5]
+print(a)
+print(b)
+print(c)
+print(all)
